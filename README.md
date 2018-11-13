@@ -9,7 +9,8 @@ The Bioscreen C machine allows for easy growth experiments with bacteria and yea
 ### Quick Start Guide
 After the experiment is completed, export the data as a '.csv' file. Then, in Python:
 
-'''\# import the module and create a new Experiment object
+```
+\# import the module and create a new Experiment object
 import bioscreen
 expt = bioscreen.Experiment()
 
@@ -23,7 +24,7 @@ expt.set_config(['Group1', 'Group2'], ['Sample1', 'Sample2', 'Sample3'])
 \# Summarize the data and graph
 expt.summarize('data_file.csv')
 expt.graph('data.png')
-'''
+```
 
 #### Further documentation is found in the module. Use bioscreen?, or Experiment.summarize?, for example.
 #### Also, a step-by-step example, along with more in-depth documentation is found in the example folder.

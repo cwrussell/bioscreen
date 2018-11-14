@@ -26,5 +26,9 @@ expt.summarize('data_file.csv')
 expt.graph('data.png')
 ```
 
+### Documentation
+
+[More in-depth documentation with an example experiment](https://github.com/cwrussell/bioscreen/edit/master/example/example.md) is found in the example folder. This includes an example of an [experiment configuration file](https://github.com/cwrussell/bioscreen/blob/master/example/data.config)
+
 #### Further documentation is found in the module. Use bioscreen?, or Experiment.summarize?, for example.
-#### Also, a step-by-step example, along with more in-depth documentation is found in the example folder.
+

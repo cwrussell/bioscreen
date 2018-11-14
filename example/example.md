@@ -22,7 +22,7 @@ This can be done three different ways:
 (3) manually setting Experiment.configuration, which is probably most helpful for small experiments (see below)
 
 In this example, we will create a configuration file. The file must be tab-delimited with one row
-for each set of wells. The fields are (1) Group (i.e. condition), (2) Sample, (3) Wells. See [data.config](https://github.com/cwrussell/bioscreen/edit/master/example/data.config)
+for each set of wells. The fields are (1) Group (i.e. condition), (2) Sample, (3) Wells. See [data.config](https://github.com/cwrussell/bioscreen/example/data.config)
 for the full file, but here are the first few lines:
 
 ```

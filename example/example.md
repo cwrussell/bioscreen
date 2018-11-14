@@ -22,7 +22,7 @@ This can be done three different ways:
 (3) manually setting Experiment.configuration, which is probably most helpful for small experiments (see below)
 
 In this example, we will create a configuration file. The file must be tab-delimited with one row
-for each set of wells. The fields are (1) Group (i.e. condition), (2) Sample, (3) Wells. See "data.config"
+for each set of wells. The fields are (1) Group (i.e. condition), (2) Sample, (3) Wells. See [data.config](https://github.com/cwrussell/bioscreen/edit/master/example/data.config)
 for the full file, but here are the first few lines:
 
 ```
@@ -95,8 +95,6 @@ It is possible to skip the configuration step and create graphs from a summary f
 from Experiment.write_summary()
 
 ```
-import bioscreen
-expt = bioscreen.Experiment()
 expt.load_summary('data.summary.csv')
 ```
 
@@ -129,15 +127,15 @@ For example, if two samples plus a blank were run in duplicate wells in two diff
 the configuration could be set like this:
 
 ```
-import bioscreen
-expt = bioscreen.Experiment()
 expt.configuration = [ {'group': 'condition1', 'blank': [1,2], 'sample1': [3,4], 'sample2': [5,6]}, {'group': 'condition2', 'blank': [7,8], 'sample1': [9,10], 'sample2': [11,12]} ]
 ```
 
 ## The w() Function
 
-w(x, y) creates a list from x to y
->>> w(1,6)
-  [1,2,3,4,5,6]
+w(x, y) creates a list from x to y. This function can be a helpful shorthand when setting the configuration manually.
 
-This function could be a helpful shorthand when setting the configuration manually.
+```
+w(1,6)
+print(w)
+# [1, 2, 3, 4, 5, 6]
+```

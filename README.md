@@ -4,7 +4,7 @@ Python code to analyze and graph data from Bioscreen C growth experiments
 ### Introduction
 The Bioscreen C machine allows for easy growth experiments with bacteria and yeast. An optical density reading is taken at several timepoints during the experiment, and ultimately, a growth curve figure is created. This module helps with summarizing and graphing data that come from these experiments, making figures like this one:
 
-![Growth Curve Example](https://github.com/cwrussell/bioscreen/blob/master/example/data.LB.png)
+![Growth Curve Example](example/data.LB.png)
 
 ### Quick Start Guide
 After the experiment is completed, export the data as a '.csv' file. Then, in Python:
@@ -28,7 +28,7 @@ expt.graph('data.png')
 
 ### Documentation
 
-[More in-depth documentation with an example experiment](https://github.com/cwrussell/bioscreen/example/example.md) is found in the example folder. This includes an example of an [experiment configuration file](https://github.com/cwrussell/bioscreen/example/data.config)
+[More in-depth documentation with an example experiment](example/example.md) is found in the example folder. This includes an example of an [experiment configuration file](example/data.config)
 
 #### Further documentation is found in the module. Use bioscreen?, or Experiment.summarize?, for example.
 

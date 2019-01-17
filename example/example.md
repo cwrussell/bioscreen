@@ -135,7 +135,7 @@ expt.configuration = [ {'group': 'condition1', 'blank': [1,2], 'sample1': [3,4],
 w(x, y) creates a list from x to y. This function can be a helpful shorthand when setting the configuration manually.
 
 ```
-w(1,6)
-print(w)
+wells = w(1,6)
+print(wells)
 # [1, 2, 3, 4, 5, 6]
 ```
